@@ -55,3 +55,12 @@ a{
 /**********
 SPACING
 **********/
+main{
+    padding-inline: 4rem;
+    @include burger_menu{
+        padding-inline: 2rem;
+    }
+    section{
+        padding-block: 2rem;
+    }
+}

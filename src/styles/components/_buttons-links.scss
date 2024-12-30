@@ -1,0 +1,24 @@
+.ai-btn{
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 6px;
+    transition: $transition;
+    background-color: $clr-font;
+    color: $clr-background;
+    text-transform: uppercase;
+    border: 1.5px solid $clr-font;
+    display: inline-block;
+    &:hover{
+        background-color: transparent;
+        color: $clr-font;
+        cursor: pointer;
+    }
+}
+
+.link{
+    @include link($clr-font);
+}
+
+.link-underline{
+    @include linkUnderline($clr-font);
+}

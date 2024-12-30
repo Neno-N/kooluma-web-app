@@ -1,6 +1,30 @@
 /**********
 COMPONENTS  
 **********/
+@mixin linkUnderline($color){
+    color: $color;
+    background-image: linear-gradient($color, $color);
+    background-position: bottom left;
+    background-size: 100% 1.5px;
+    background-repeat: no-repeat;
+    transition: $transition;
+    display: inline-block;
+    &:hover{
+        background-size: 0% 1.5px;
+    }
+}
+@mixin link($color){
+    color: $color;
+    background-image: linear-gradient($color, $color);
+    background-position: bottom left;
+    background-size: 0% 1.5px;
+    background-repeat: no-repeat;
+    transition: $transition;
+    display: inline-block;
+    &:hover{
+        background-size: 100% 1.5px;
+    }
+}
 /**********
 RESPONSIVE
 **********/
