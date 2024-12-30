@@ -1,0 +1,35 @@
+/**********
+COMPONENTS  
+**********/
+/**********
+RESPONSIVE
+**********/
+@mixin desktop_all{
+    @media screen and (min-width: $desktop_min) {
+        @content
+    }
+};
+
+@mixin tablet_all{
+    @media screen and (min-width: $tablet_min) and (max-width: $tablet_max) {
+        @content
+    }
+};
+
+@mixin tablet_mobile{
+    @media screen and (max-width: $tablet_max) {
+        @content
+    }
+};
+
+@mixin burger_menu{
+    @media screen and (max-width: $burger_menu) {
+        @content
+    }
+};
+
+@mixin mobile_all{
+    @media screen and (max-width: $mobile_max) {
+        @content
+    }
+};
